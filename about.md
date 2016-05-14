@@ -1,15 +1,18 @@
 ---
-layout: page
+layout: page-custom
 title: About
 permalink: /about/
 ---
 
-Some information about you!
+# My name is Guillaume Berry, I'm designer.
 
-### More Information
+### I'm also a craftsman
 
-A place to include any other types of information that you'd like to include about yourself.
+> “A maker needs a set of tools, a skill set, materials, and a motivation to learn everything they can to get better at their craft. They understand that the more they master their craft, the easier, faster and better their work becomes.”
+— Execute book › Page 39
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+guillaume.berry[at]gmail[dot]com
+
+My portfolio is here [http://ingredients-divers.fr/](http://ingredients-divers.fr/)
