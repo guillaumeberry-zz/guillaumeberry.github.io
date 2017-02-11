@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #ededed;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+.container {
+	display: flex;
+}
+
+.cover {
+	width: 100%;
+	height: 90vh;
+	padding: 0;
+	text-align: center;
+	background-color: #d0d0d0;
+	background: url('src/img/cover_1500x1000.jpg') center center no-repeat;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: white;
+    margin-bottom: 0!important;
+}
+
+.brick {
+	width: 100%;
+	padding: 6vh;
+	color: #575756;
+	background-color: white;
+}
+
+p {
+	max-width: 60vmax;
+	min-width: 288px;
+	line-height: 1.5em;
+}
+h1 { font-size: 2.3em; }
+
+a {
+	color: #009fe3;
+	text-decoration: none;
+	border-bottom: 0.005em #009fe3 solid;
+}
+
+a:hover { color: #e71e6e; border-bottom: 0.005em #e71e6e solid; }
+
+.cover, .brick {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1.666666vmax;
+}
+
+.space { margin: 1.666666vmax; }
+
+/* Font */
+@font-face {
+    font-family: 'rm_pro';
+    src: url('src/font/rmpro-light-webfont.eot');
+    src: url('src/font/rmpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('src/font/rmpro-light-webfont.woff2') format('woff2'),
+         url('src/font/rmpro-light-webfont.woff') format('woff'),
+         url('src/font/rmpro-light-webfont.ttf') format('truetype'),
+         url('src/font/rmpro-light-webfont.svg#rm_proregular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
