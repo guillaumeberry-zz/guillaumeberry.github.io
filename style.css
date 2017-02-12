@@ -38,17 +38,6 @@ p {
 
 h1 { font-size: 4vw; line-height: calc(4vw * 1.2);}
 
-@media screen and (min-width: 37.5rem) {
-  h1 {
-    font-size: calc(1.29616rem + 1.86118 * ((100vw - 37.5rem) / 42.5));
-  }
-}
-@media screen and (min-width: 80rem) {
-  h1 {
-    font-size: 3.15733rem;
-  }
-}
-
 a {
 	color: #009fe3;
 	text-decoration: none;
