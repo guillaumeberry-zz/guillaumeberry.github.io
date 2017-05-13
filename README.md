@@ -1,2 +1,2 @@
 # guillaumeberry.github.io
-Personal website about me.
+Personal website.
