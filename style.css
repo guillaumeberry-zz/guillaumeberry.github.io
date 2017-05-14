@@ -8,6 +8,11 @@ body {
 	font-family: 'rm_pro';
 	background-color: #ededed;
 	text-align: left;
+  text-rendering:optimizeLegibility;
+  -webkit-font-feature-settings:  "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+  -ms-font-feature-settings:    "liga" 1;
+  font-feature-settings:      "liga" 1;
 }
 
 .container { display: flex; }
@@ -20,10 +25,10 @@ body {
 	background-color: #d0d0d0;
 	background: url('src/img/cover_1500x1000.jpg') center center no-repeat;
 	background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    color: white;
-    margin-bottom: 0!important;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+  margin-bottom: 0!important;
 }
 
 .brick {
@@ -34,10 +39,9 @@ body {
 }
 
 p {
-	max-width: 60vmax;
+	max-width: 50vmax;
 	min-width: 288px;
 }
-
 
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -46,14 +50,41 @@ h4 { font-size: 1.5rem; }
 h5 { font-size: 1.25rem; }
 h6 { font-size: 1.0rem; }
 
+
+/*Links — color: #009fe3; */
 a {
-	color: #009fe3;
-	text-decoration: none;
-	border-bottom: 0.005em #009fe3 solid;
+  text-decoration: none;
+  color: #575756;
+  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#009fe3, #009fe3);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-shadow: .03em 0 #fff, -.03em 0 #fff, 0 .03em #fff, 0 -.03em #fff, .06em 0 #fff, -.06em 0 #fff, .09em 0 #fff, -.09em 0 #fff, .12em 0 #fff, -.12em 0 #fff, .15em 0 #fff, -.15em 0 #fff;
+  background-position: 0 95%, 100% 95%, 0 92%;
+  -webkit-transition:color 0.2s ease-in-out;
+  -moz-transition:color 0.2s ease-in-out;
+  -o-transition:color 0.2s ease-in-out;
+  transition:color 0.2s ease-in-out;
+}
+a::-moz-selection { text-shadow: none; }
+a::selection { text-shadow: none; }
+a::-moz-selection { text-shadow: none; }
+a::selection {
+  text-shadow: none;
+}
+a:hover {
+  color: #009fe3;
+  background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#009fe3, #009fe3);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  text-shadow: .03em 0 #fff, -.03em 0 #fff, 0 .03em #fff, 0 -.03em #fff, .06em 0 #fff, -.06em 0 #fff, .09em 0 #fff, -.09em 0 #fff, .12em 0 #fff, -.12em 0 #fff, .15em 0 #fff, -.15em 0 #fff;
+  background-position: 0 95%, 100% 95%, 0 92%;
+  -webkit-transition:background 0.2s ease;
+  -moz-transition:background 0.2s ease;
+  -o-transition:background 0.2s ease;
+  transition:background 0.2s ease;
 }
 
-a:hover { color: #e71e6e; border-bottom: 0.005em #e71e6e solid; }
-
+/* Cover & brick*/
 .cover, .brick {
 	display: flex;
 	align-items: center;
@@ -61,39 +92,40 @@ a:hover { color: #e71e6e; border-bottom: 0.005em #e71e6e solid; }
 	margin: 1.6666666vmax;
 }
 
-
 /* Font */
 @font-face {
-    font-family: 'rm_pro';
-    src: url('src/font/rmpro-light-webfont.eot');
-    src: url('src/font/rmpro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('src/font/rmpro-light-webfont.woff2') format('woff2'),
-         url('src/font/rmpro-light-webfont.woff') format('woff'),
-         url('src/font/rmpro-light-webfont.ttf') format('truetype'),
-         url('src/font/rmpro-light-webfont.svg#rm_proregular') format('svg');
-    font-weight: 200;
-    font-style: normal;
+  font-family: 'rm_pro';
+  src:  url('src/font/rmpro-light-webfont.eot');
+  src:  url('src/font/rmpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('src/font/rmpro-light-webfont.woff2') format('woff2'),
+        url('src/font/rmpro-light-webfont.woff') format('woff'),
+        url('src/font/rmpro-light-webfont.ttf') format('truetype'),
+        url('src/font/rmpro-light-webfont.svg#rm_proregular') format('svg');
+  font-weight: 200;
+  font-style: normal;
 }
 
 /* Responsive typography tweaks */
 body { }
-  @media (min-width: 600px) {
+    @media (min-width: 600px) {
     body {
       font-size: 1.125em; }
-      body p {
-        font-size: 16px; } }
-  @media (min-width: 800px) {
+    body p {
+      font-size: 16px; } }
+    @media (min-width: 800px) {
     body {
       font-size: 1.188em; }
-      body p {
-        font-size: 18px; } }
-  @media (min-width: 1030px) {
+    body p {
+      font-size: 18px; } }
+    @media (min-width: 1030px) {
     body {
       font-size: 1.250em; }
-      body p {
-        font-size: 20px; } }
-  @media (min-width: 1250px) {
+    body p {
+      font-size: 20px; } }
+    @media (min-width: 1250px) {
     body {
       font-size: 1.313em; }
-      body p {
-        font-size: 22px; } }
+    body p {
+      font-size: 22px; } }
+
+/* END */
